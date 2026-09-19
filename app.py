@@ -75,7 +75,8 @@ def keys(abstraction_runtime_id):
             collected_keys |= attachment_getting.keys(attachment)
     key_namer = KeyNamer(definitions)
     template_keys: list[TemplateKey] = []
-    for key in collected_keys:
+    for element in collected_keys:
+        key = ValueKey.cast(element)
         name = key_namer.smart_name(key, attachment_getting) or '-'
         template_keys.append(TemplateKey(key, name))
 
