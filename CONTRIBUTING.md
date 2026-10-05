@@ -20,7 +20,7 @@ Requires Python 3.10-3.14.
 ```bash
 pip install -r requirements.txt          # flask and deps
 pip install "dsviper<2"                  # Viper Python binding (also pulled by requirements.txt)
-ln -s /path/to/db.rapmc database.link    # point the server at your commit database
+ln -s /path/to/model.cdb database.link   # point the server at your commit database
 flask run --debug                        # launch
 ```
 

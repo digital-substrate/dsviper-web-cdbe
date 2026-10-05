@@ -11,7 +11,7 @@ Part of the [DevKit ecosystem](https://docs.digitalsubstrate.io/).
 ## Prerequisites
 
 - Python 3.10–3.14
-- A Viper commit database (`.rapmc` or equivalent) to point the server at
+- A Viper commit database to point the server at
 
 ## Installation
 
@@ -26,7 +26,7 @@ This installs `dsviper` (the Viper Python binding, from [PyPI](https://pypi.org/
 The server opens the database pointed to by the `database.link` symlink in the project root. Create it first:
 
 ```bash
-ln -s /path/to/your/database.rapmc database.link
+ln -s /path/to/your/model.cdb database.link
 ```
 
 Then launch the server:
@@ -36,7 +36,7 @@ flask run --debug
 ```
 
 ```
-* Database: /path/to/your/database.rapmc
+* Database: /path/to/your/model.cdb
  * Running on http://127.0.0.1:5000
 ```
 

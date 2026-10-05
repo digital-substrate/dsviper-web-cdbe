@@ -12,10 +12,6 @@ FILENAME = "database.link"
 if not os.path.exists(FILENAME):
     print(f'* The symbolic link to the CommitDatabase is missing.')
     print(f'use ln -sf <commit_database_path> {FILENAME}')
-    print(f'\nRaptor demo:')
-    print("$ ln -sf ~/Databases/Raptor/demo_sync_server.rapmc database.link")
-    print(f'\nGraph Editor demo:')
-    print("$ ln -sf ~/Databases/demo_sync_server.graph database.link")
     exit(1)
 
 print(f' * Database: {os.readlink(FILENAME)}')
